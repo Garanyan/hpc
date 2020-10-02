@@ -1,7 +1,7 @@
 ## hpc
 
-PC
-#Release
+# PC
+## Release
 512 Matrix * Vector: 0.000413365 seconds.
 
 Matrix * Matrix: 0.0790074 seconds.
@@ -18,7 +18,7 @@ Matrix * Matrix: 4.54645 seconds.
 
 Matrix * Matrix: 35.9895 seconds.
 
-#Debug
+# Debug
 512 Matrix * Vector: 0.00206552 seconds.
 
 Matrix * Matrix: 1.01633 seconds.
@@ -35,8 +35,8 @@ Matrix * Matrix: 64.7249 seconds.
 
 Matrix * Matrix: 520.442 seconds.
 
-##Docker 
-# /root/Matrix_release
+# Docker 
+## /root/Matrix_release
 512 Matrix * Vector: 0.00107397 seconds.
 
 Matrix * Matrix: 0.0913243 seconds.
@@ -53,7 +53,7 @@ Matrix * Matrix: 4.36965 seconds.
 
 Matrix * Matrix: 34.538 seconds.
 
-# /root/Matrix_debug
+## /root/Matrix_debug
 512 Matrix * Vector: 0.00238993 seconds.
 
 Matrix * Matrix: 1.22154 seconds.
