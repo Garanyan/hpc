@@ -15,16 +15,16 @@ int main (int argc, char *argv[])
         a[i] = b[i] = (float)i;
     }
 
-#pragma omp parallel \
-    shared(a,b,c,chunk) \
-    private(i,tid) \
+#pragma omp parallel for \
+    private(i, tid) \
+    shared(a, b, c) \
     schedule(static,chunk)
+    for (i = 0; i < N; ++i)
     {
         tid = omp_get_thread_num();
-
-        for (i = 0; i < N; ++i)
         {
             c[i] = a[i] + b[i];
+#pragma omp critical	    
             printf("tid = %d, c[%d] = %f\n", tid, i, c[i]);
         }
     } 
